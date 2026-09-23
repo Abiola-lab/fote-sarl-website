@@ -3,11 +3,11 @@ const translations = {
     nav: { home: "Accueil", business: "Entreprise", brand: "Marque Fote", products: "Produits", contact: "Contact", cta: "Nous contacter" },
     meta: {
       title: {
-        home: "Fote Import & Export — Import-export entre l'Afrique et le monde",
-        business: "Notre entreprise — Fote Import & Export",
-        brand: "Marque Fote — Jus tropicaux",
-        products: "Nos produits — Fote Import & Export",
-        contact: "Contact — Fote Import & Export"
+        home: "Fote Import & Export | Import-export entre l'Afrique et le monde",
+        business: "Notre entreprise | Fote Import & Export",
+        brand: "Marque Fote | Jus tropicaux",
+        products: "Nos produits | Fote Import & Export",
+        contact: "Contact | Fote Import & Export"
       }
     },
     home: {
@@ -33,7 +33,7 @@ const translations = {
       brand: {
         eyebrow: "Notre marque",
         title: "Fote, la saveur tropicale qui monte",
-        text: "Lancée en 2013, Fote est notre marque propre de jus de fruits — testée en usines certifiées et pensée pour conquérir l'Afrique avant l'Europe.",
+        text: "Lancée en 2013, Fote est notre marque propre de jus de fruits, testée en usines certifiées et pensée pour conquérir l'Afrique avant l'Europe.",
         cta: "Découvrir la marque Fote"
       },
       news: {
@@ -111,7 +111,7 @@ const translations = {
       },
       vision: {
         title: "Notre vision",
-        text: "Conquérir le marché africain avec la marque Fote, avant de partir à la conquête de l'Europe — un marché à la fois.",
+        text: "Conquérir le marché africain avec la marque Fote, avant de partir à la conquête de l'Europe, un marché à la fois.",
         cta: "Voir tous nos produits"
       }
     },
@@ -170,7 +170,7 @@ const translations = {
         subject: "Sujet",
         message: "Votre message",
         submit: "Envoyer le message",
-        note: "Formulaire de démonstration — à connecter à votre messagerie avant mise en ligne définitive."
+        note: "Formulaire de démonstration : à connecter à votre messagerie avant mise en ligne définitive."
       }
     },
     footer: {
@@ -186,11 +186,11 @@ const translations = {
     nav: { home: "Início", business: "Empresa", brand: "Marca Fote", products: "Produtos", contact: "Contactos", cta: "Contacte-nos" },
     meta: {
       title: {
-        home: "Fote Import & Export — Importação e exportação entre a África e o mundo",
-        business: "A nossa empresa — Fote Import & Export",
-        brand: "Marca Fote — Sumos tropicais",
-        products: "Os nossos produtos — Fote Import & Export",
-        contact: "Contactos — Fote Import & Export"
+        home: "Fote Import & Export | Importação e exportação entre a África e o mundo",
+        business: "A nossa empresa | Fote Import & Export",
+        brand: "Marca Fote | Sumos tropicais",
+        products: "Os nossos produtos | Fote Import & Export",
+        contact: "Contactos | Fote Import & Export"
       }
     },
     home: {
@@ -216,7 +216,7 @@ const translations = {
       brand: {
         eyebrow: "A nossa marca",
         title: "Fote, o sabor tropical em ascensão",
-        text: "Lançada em 2013, a Fote é a nossa marca própria de sumos de fruta — testada em fábricas certificadas e pensada para conquistar África antes da Europa.",
+        text: "Lançada em 2013, a Fote é a nossa marca própria de sumos de fruta, testada em fábricas certificadas e pensada para conquistar África antes da Europa.",
         cta: "Descobrir a marca Fote"
       },
       news: {
@@ -294,7 +294,7 @@ const translations = {
       },
       vision: {
         title: "A nossa visão",
-        text: "Conquistar o mercado africano com a marca Fote, antes de partir à conquista da Europa — um mercado de cada vez.",
+        text: "Conquistar o mercado africano com a marca Fote, antes de partir à conquista da Europa, um mercado de cada vez.",
         cta: "Ver todos os nossos produtos"
       }
     },
@@ -353,7 +353,7 @@ const translations = {
         subject: "Assunto",
         message: "A sua mensagem",
         submit: "Enviar mensagem",
-        note: "Formulário de demonstração — a ligar ao seu serviço de e-mail antes da publicação definitiva."
+        note: "Formulário de demonstração: a ligar ao seu serviço de e-mail antes da publicação definitiva."
       }
     },
     footer: {
@@ -369,11 +369,11 @@ const translations = {
     nav: { home: "Home", business: "Business", brand: "Fote Brand", products: "Products", contact: "Contact", cta: "Contact us" },
     meta: {
       title: {
-        home: "Fote Import & Export — Trading between Africa and the world",
-        business: "Our business — Fote Import & Export",
-        brand: "Fote Brand — Tropical juices",
-        products: "Our products — Fote Import & Export",
-        contact: "Contact — Fote Import & Export"
+        home: "Fote Import & Export | Trading between Africa and the world",
+        business: "Our business | Fote Import & Export",
+        brand: "Fote Brand | Tropical juices",
+        products: "Our products | Fote Import & Export",
+        contact: "Contact | Fote Import & Export"
       }
     },
     home: {
@@ -399,7 +399,7 @@ const translations = {
       brand: {
         eyebrow: "Our brand",
         title: "Fote, the rising tropical flavour",
-        text: "Launched in 2013, Fote is our own fruit juice brand — tested in certified factories and built to win Africa before Europe.",
+        text: "Launched in 2013, Fote is our own fruit juice brand, tested in certified factories and built to win Africa before Europe.",
         cta: "Discover the Fote brand"
       },
       news: {
@@ -477,7 +477,7 @@ const translations = {
       },
       vision: {
         title: "Our vision",
-        text: "Win the African market with the Fote brand, before setting out to conquer Europe — one market at a time.",
+        text: "Win the African market with the Fote brand, before setting out to conquer Europe, one market at a time.",
         cta: "See all our products"
       }
     },
@@ -536,7 +536,7 @@ const translations = {
         subject: "Subject",
         message: "Your message",
         submit: "Send message",
-        note: "Demo form — to be connected to your mailbox before final launch."
+        note: "Demo form: to be connected to your mailbox before final launch."
       }
     },
     footer: {

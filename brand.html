@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fote Import & Export — Marque Fote</title>
+<meta name="description" content="Découvrez la marque Fote : jus tropicaux Fote Tropical et Fote Mango, nés d'une étude de marché et produits en usines certifiées.">
+<link rel="icon" href="assets/images/original/logo1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { navy: '#0b3a53', teal: '#0e7c86', brandred: '#d62839', mango: '#f5a623', cream: '#fbf7f0' },
+        fontFamily: { display: ['Poppins', 'Inter', 'system-ui', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }
+    }
+  };
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cream text-[#1a2b33]" data-page-title-key="meta.title.brand">
+
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-navy/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="assets/images/original/logo1.jpg" alt="Fote Import & Export" class="h-9 w-auto rounded">
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-navy">
+        <a href="index.html" class="hover:text-teal transition-colors" data-i18n="nav.home">Accueil</a>
+        <a href="business.html" class="hover:text-teal transition-colors" data-i18n="nav.business">Entreprise</a>
+        <a href="brand.html" class="text-teal" data-i18n="nav.brand">Marque Fote</a>
+        <a href="products.html" class="hover:text-teal transition-colors" data-i18n="nav.products">Produits</a>
+        <a href="contact.html" class="hover:text-teal transition-colors" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-1 rounded-full bg-navy/5 p-1 text-xs font-medium text-navy">
+          <button type="button" data-lang-option="fr" class="px-2.5 py-1 rounded-full transition-colors">FR</button>
+          <button type="button" data-lang-option="pt" class="px-2.5 py-1 rounded-full transition-colors">PT</button>
+          <button type="button" data-lang-option="en" class="px-2.5 py-1 rounded-full transition-colors">EN</button>
+        </div>
+        <a href="contact.html" class="hidden md:inline-flex items-center rounded-full bg-brandred text-white text-sm font-semibold px-4 py-2 hover:bg-navy transition-colors" data-i18n="nav.cta">Nous contacter</a>
+        <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-lg text-navy hover:bg-navy/5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-navy/10 bg-cream">
+    <div class="px-5 py-4 flex flex-col gap-3 text-sm font-medium text-navy">
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="business.html" data-i18n="nav.business">Entreprise</a>
+      <a href="brand.html" data-i18n="nav.brand">Marque Fote</a>
+      <a href="products.html" data-i18n="nav.products">Produits</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <div class="flex items-center gap-1 pt-2">
+        <button type="button" data-lang-option="fr" class="px-2.5 py-1 rounded-full bg-navy/5 text-xs font-medium">FR</button>
+        <button type="button" data-lang-option="pt" class="px-2.5 py-1 rounded-full bg-navy/5 text-xs font-medium">PT</button>
+        <button type="button" data-lang-option="en" class="px-2.5 py-1 rounded-full bg-navy/5 text-xs font-medium">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="relative hero-gradient text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-24 relative z-10">
+      <p class="uppercase tracking-widest text-mango text-xs font-semibold mb-4" data-i18n="brand.hero.eyebrow">Marque propre</p>
+      <h1 class="font-display text-4xl sm:text-5xl font-extrabold leading-tight mb-5 max-w-2xl" data-i18n="brand.hero.title">Fote, une saveur unique et savoureuse</h1>
+      <p class="text-white/85 text-lg max-w-xl" data-i18n="brand.hero.subtitle">Née d'une étude approfondie des tendances de consommation, la marque Fote propose des jus de fruits pensés pour l'Afrique, puis pour l'Europe.</p>
+    </div>
+    <div class="absolute inset-0 opacity-25 mix-blend-overlay" style="background-image:url('assets/images/original/featured/tropical.jpg');background-size:cover;background-position:center;"></div>
+  </section>
+
+  <!-- Story -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <h2 class="font-display text-3xl font-bold text-navy mb-5" data-i18n="brand.story.title">Notre histoire de marque</h2>
+      <p class="text-navy/70 mb-4" data-i18n="brand.story.text1">Après une étude de marché sur les produits les plus populaires, nous avons lancé Fote en 2013 : une marque de jus de fruits différenciée par ses couleurs, son design et sa saveur.</p>
+      <p class="text-navy/70" data-i18n="brand.story.text2">Chaque référence est régulièrement testée dans des usines certifiées, dans le respect des normes de sécurité alimentaire les plus strictes.</p>
+    </div>
+    <div class="reveal">
+      <img src="assets/images/original/fote_medio2.jpg" alt="Fote" class="rounded-2xl shadow-xl w-full object-cover">
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="bg-white border-y border-navy/5">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20">
+      <h2 class="font-display text-3xl font-bold text-navy mb-14 text-center reveal" data-i18n="brand.products.title">Nos jus Fote</h2>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div class="reveal card-hover bg-cream rounded-2xl overflow-hidden border border-navy/5">
+          <img src="assets/images/original/tropical_medio.jpg" alt="Fote Tropical" class="h-56 w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-display text-xl font-bold text-navy mb-2" data-i18n="brand.products.tropical.title">Fote Tropical</h3>
+            <p class="text-sm text-navy/70" data-i18n="brand.products.tropical.text">Un mélange de fruits tropicaux à la saveur vive, pensé pour rafraîchir à tout moment de la journée.</p>
+          </div>
+        </div>
+        <div class="reveal card-hover bg-cream rounded-2xl overflow-hidden border border-navy/5">
+          <img src="assets/images/original/fote_produto.jpg" alt="Fote Mango" class="h-56 w-full object-cover">
+          <div class="p-6">
+            <h3 class="font-display text-xl font-bold text-navy mb-2" data-i18n="brand.products.mango.title">Fote Mango</h3>
+            <p class="text-sm text-navy/70" data-i18n="brand.products.mango.text">Le nectar de mangue signature de la marque, gourmand et généreux en fruit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-20">
+    <h2 class="font-display text-3xl font-bold text-navy mb-14 text-center reveal" data-i18n="brand.usp.title">Pourquoi Fote</h2>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="reveal text-center p-6">
+        <div class="h-14 w-14 rounded-full bg-brandred/10 text-brandred flex items-center justify-center mx-auto mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-navy mb-2" data-i18n="brand.usp.u1.title">Saveur distinctive</h3>
+        <p class="text-sm text-navy/70" data-i18n="brand.usp.u1.text">Des recettes pensées pour se démarquer, du goût jusqu'au design de la canette.</p>
+      </div>
+      <div class="reveal text-center p-6">
+        <div class="h-14 w-14 rounded-full bg-brandred/10 text-brandred flex items-center justify-center mx-auto mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-13.5v4.5l3 1.5"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-navy mb-2" data-i18n="brand.usp.u2.title">Qualité contrôlée</h3>
+        <p class="text-sm text-navy/70" data-i18n="brand.usp.u2.text">Une production en usines certifiées, testée à chaque étape.</p>
+      </div>
+      <div class="reveal text-center p-6">
+        <div class="h-14 w-14 rounded-full bg-brandred/10 text-brandred flex items-center justify-center mx-auto mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"/></svg>
+        </div>
+        <h3 class="font-display font-bold text-navy mb-2" data-i18n="brand.usp.u3.title">Toujours plus de choix</h3>
+        <p class="text-sm text-navy/70" data-i18n="brand.usp.u3.text">De nouvelles saveurs à venir, pour élargir la gamme Fote.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section class="bg-navy text-white">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 py-20 text-center reveal">
+      <h2 class="font-display text-3xl font-bold mb-4" data-i18n="brand.vision.title">Notre vision</h2>
+      <p class="text-white/80 mb-8" data-i18n="brand.vision.text">Conquérir le marché africain avec la marque Fote, avant de partir à la conquête de l'Europe — un marché à la fois.</p>
+      <a href="products.html" class="inline-flex items-center rounded-full bg-mango text-navy font-semibold px-7 py-3 hover:bg-white transition-colors" data-i18n="brand.vision.cta">Voir tous nos produits</a>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-navy text-white/80">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-3 gap-10">
+    <div>
+      <img src="assets/images/original/logo1.jpg" alt="Fote Import & Export" class="h-9 w-auto rounded mb-4 bg-white p-1">
+      <p class="text-sm" data-i18n="footer.tagline">Import & Export entre l'Afrique et le monde depuis 2004.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4" data-i18n="footer.nav_title">Navigation</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-white" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="business.html" class="hover:text-white" data-i18n="nav.business">Entreprise</a></li>
+        <li><a href="brand.html" class="hover:text-white" data-i18n="nav.brand">Marque Fote</a></li>
+        <li><a href="products.html" class="hover:text-white" data-i18n="nav.products">Produits</a></li>
+        <li><a href="contact.html" class="hover:text-white" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4" data-i18n="footer.contact_title">Contact</h4>
+      <ul class="space-y-2 text-sm">
+        <li>fotesarl@fotesarl.com</li>
+        <li>+351 963 311 615</li>
+        <li>+224 666 55 54 33</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-5 text-xs text-white/60">
+      <p>&copy; <span id="current-year">2026</span> Fote Import & Export S.a.r.l. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+:root {
+  --brand-navy: #0b3a53;
+  --brand-teal: #0e7c86;
+  --brand-red: #d62839;
+  --brand-mango: #f5a623;
+  --brand-cream: #fbf7f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--brand-cream);
+  color: #1a2b33;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(120deg, var(--brand-navy) 0%, var(--brand-teal) 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, var(--brand-mango) 0%, var(--brand-red) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(11, 58, 83, 0.25);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-lang-switch] {
+  transition: opacity 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

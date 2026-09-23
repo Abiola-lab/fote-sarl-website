@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fote Import & Export — Produits</title>
+<meta name="description" content="Boissons, produits alimentaires et biens industriels importés et exportés par Fote Import & Export S.a.r.l.">
+<link rel="icon" href="assets/images/original/logo1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { navy: '#0b3a53', teal: '#0e7c86', brandred: '#d62839', mango: '#f5a623', cream: '#fbf7f0' },
+        fontFamily: { display: ['Poppins', 'Inter', 'system-ui', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }
+    }
+  };
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cream text-[#1a2b33]" data-page-title-key="meta.title.products">
+
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-navy/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="assets/images/original/logo1.jpg" alt="Fote Import & Export" class="h-9 w-auto rounded">
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-navy">
+        <a href="index.html" class="hover:text-teal transition-colors" data-i18n="nav.home">Accueil</a>
+        <a href="business.html" class="hover:text-teal transition-colors" data-i18n="nav.business">Entreprise</a>
+        <a href="brand.html" class="hover:text-teal transition-colors" data-i18n="nav.brand">Marque Fote</a>
+        <a href="products.html" class="text-teal" data-i18n="nav.products">Produits</a>
+        <a href="contact.html" class="hover:text-teal transition-colors" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-1 rounded-full bg-navy/5 p-1 text-xs font-medium text-navy">
+          <button type="button" data-lang-option="fr" class="px-2.5 py-1 rounded-full transition-colors">FR</button>
+          <button type="button" data-lang-option="pt" class="px-2.5 py-1 rounded-full transition-colors">PT</button>
+          <button type="button" data-lang-option="en" class="px-2.5 py-1 rounded-full transition-colors">EN</button>
+        </div>
+        <a href="contact.html" class="hidden md:inline-flex items-center rounded-full bg-brandred text-white text-sm font-semibold px-4 py-2 hover:bg-navy transition-colors" data-i18n="nav.cta">Nous contacter</a>
+        <button id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-lg text-navy hover:bg-navy/5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-navy/10 bg-cream">
+    <div class="px-5 py-4 flex flex-col gap-3 text-sm font-medium text-navy">
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="business.html" data-i18n="nav.business">Entreprise</a>
+      <a href="brand.html" data-i18n="nav.brand">Marque Fote</a>
+      <a href="products.html" data-i18n="nav.products">Produits</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <div class="flex items-center gap-1 pt-2">
+        <button type="button" data-lang-option="fr" class="px-2.5 py-1 rounded-full bg-navy/5 text-xs font-medium">FR</button>
+        <button type="button" data-lang-option="pt" class="px-2.5 py-1 rounded-full bg-navy/5 text-xs font-medium">PT</button>
+        <button type="button" data-lang-option="en" class="px-2.5 py-1 rounded-full bg-navy/5 text-xs font-medium">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero-gradient text-white">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-24">
+      <p class="uppercase tracking-widest text-mango text-xs font-semibold mb-4" data-i18n="products.hero.eyebrow">Catalogue</p>
+      <h1 class="font-display text-4xl sm:text-5xl font-extrabold leading-tight mb-5 max-w-2xl" data-i18n="products.hero.title">Une large gamme de produits essentiels</h1>
+      <p class="text-white/85 text-lg max-w-xl" data-i18n="products.hero.subtitle">Boissons, produits alimentaires et biens industriels, sélectionnés pour répondre aux besoins de nos marchés.</p>
+    </div>
+  </section>
+
+  <!-- Drinks -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-20">
+    <div class="mb-10 reveal">
+      <h2 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-2" data-i18n="products.cat.drinks.title">Boissons</h2>
+      <p class="text-navy/70" data-i18n="products.cat.drinks.subtitle">Notre marque Fote et notre partenariat ESTAR.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="reveal card-hover bg-white rounded-2xl overflow-hidden border border-navy/5 shadow-sm">
+        <img src="assets/images/original/tropical_medio.jpg" alt="Fote Tropical Juice" class="h-44 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-display font-bold text-navy mb-1" data-i18n="products.item.tropical.title">Fote Tropical Juice</h3>
+          <p class="text-sm text-navy/70" data-i18n="products.item.tropical.text">Notre mélange de fruits tropicaux, référence de la gamme Fote.</p>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-white rounded-2xl overflow-hidden border border-navy/5 shadow-sm">
+        <img src="assets/images/original/fote_produto.jpg" alt="Fote Manga Juice" class="h-44 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-display font-bold text-navy mb-1" data-i18n="products.item.mango.title">Fote Manga Juice</h3>
+          <p class="text-sm text-navy/70" data-i18n="products.item.mango.text">Le nectar de mangue signature, gourmand et rafraîchissant.</p>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-white rounded-2xl overflow-hidden border border-navy/5 shadow-sm">
+        <img src="assets/images/original/fote_medio.jpg" alt="ESTAR Energy Drink" class="h-44 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-display font-bold text-navy mb-1" data-i18n="products.item.estar.title">ESTAR Energy Drink</h3>
+          <p class="text-sm text-navy/70" data-i18n="products.item.estar.text">Distributeur officiel pour l'Afrique de l'Ouest depuis 2013.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food -->
+  <section class="bg-white border-y border-navy/5">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20">
+      <div class="mb-10 reveal">
+        <h2 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-2" data-i18n="products.cat.food.title">Produits alimentaires</h2>
+        <p class="text-navy/70" data-i18n="products.cat.food.subtitle">Des références du quotidien, en grand conditionnement.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="reveal card-hover bg-cream rounded-2xl overflow-hidden border border-navy/5">
+          <img src="assets/images/original/farinha_m.jpg" alt="Farine" class="h-36 w-full object-cover">
+          <div class="p-4">
+            <h3 class="font-display font-bold text-navy text-sm mb-1" data-i18n="products.item.flour.title">Farine</h3>
+            <p class="text-xs text-navy/70" data-i18n="products.item.flour.text">Sacs de 50 kg, pour les professionnels comme pour la distribution.</p>
+          </div>
+        </div>
+        <div class="reveal card-hover bg-cream rounded-2xl overflow-hidden border border-navy/5">
+          <img src="assets/images/original/oleo_m.jpg" alt="Huile de cuisine" class="h-36 w-full object-cover">
+          <div class="p-4">
+            <h3 class="font-display font-bold text-navy text-sm mb-1" data-i18n="products.item.oil.title">Huile de cuisine</h3>
+            <p class="text-xs text-navy/70" data-i18n="products.item.oil.text">Une huile alimentaire de qualité, disponible en grand volume.</p>
+          </div>
+        </div>
+        <div class="reveal card-hover bg-cream rounded-2xl overflow-hidden border border-navy/5">
+          <img src="assets/images/original/leite_m.jpg" alt="Lait concentré" class="h-36 w-full object-cover">
+          <div class="p-4">
+            <h3 class="font-display font-bold text-navy text-sm mb-1" data-i18n="products.item.condensedmilk.title">Lait concentré</h3>
+            <p class="text-xs text-navy/70" data-i18n="products.item.condensedmilk.text">En conserve, pour un approvisionnement fiable et durable.</p>
+          </div>
+        </div>
+        <div class="reveal card-hover bg-cream rounded-2xl overflow-hidden border border-navy/5">
+          <img src="assets/images/original/leite_m.jpg" alt="Lait en poudre" class="h-36 w-full object-cover">
+          <div class="p-4">
+            <h3 class="font-display font-bold text-navy text-sm mb-1" data-i18n="products.item.powdermilk.title">Lait en poudre</h3>
+            <p class="text-xs text-navy/70" data-i18n="products.item.powdermilk.text">Une référence incontournable de notre gamme alimentaire.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industrial -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-20">
+    <div class="mb-10 reveal">
+      <h2 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-2" data-i18n="products.cat.industrial.title">Industriel & mobilité</h2>
+      <p class="text-navy/70" data-i18n="products.cat.industrial.subtitle">Des biens durables pour équiper les marchés locaux.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="reveal card-hover bg-white rounded-2xl overflow-hidden border border-navy/5 shadow-sm">
+        <img src="assets/images/original/zinco_m.jpg" alt="Plaques de zinc" class="h-40 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-display font-bold text-navy mb-1" data-i18n="products.item.zinc.title">Plaques de zinc</h3>
+          <p class="text-sm text-navy/70" data-i18n="products.item.zinc.text">Des matériaux de construction pour les marchés locaux.</p>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-white rounded-2xl overflow-hidden border border-navy/5 shadow-sm">
+        <img src="assets/images/original/motas_m.jpg" alt="Motocyclettes" class="h-40 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-display font-bold text-navy mb-1" data-i18n="products.item.motos.title">Motocyclettes</h3>
+          <p class="text-sm text-navy/70" data-i18n="products.item.motos.text">Import et export de deux-roues, pour la mobilité du quotidien.</p>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-white rounded-2xl overflow-hidden border border-navy/5 shadow-sm">
+        <img src="assets/images/original/cartuchos.jpg" alt="Cartouches" class="h-40 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-display font-bold text-navy mb-1" data-i18n="products.item.cartridges.title">Cartouches</h3>
+          <p class="text-sm text-navy/70" data-i18n="products.item.cartridges.text">Une gamme complémentaire à notre catalogue industriel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTAR partnership -->
+  <section class="bg-navy text-white">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 py-16 text-center reveal">
+      <h2 class="font-display text-2xl sm:text-3xl font-bold mb-4" data-i18n="products.estar.title">Partenariat ESTAR Energy Drink</h2>
+      <p class="text-white/80 mb-4" data-i18n="products.estar.text">Représentant officiel d'ESTAR Energy Drink pour l'Afrique de l'Ouest depuis 2013, nous proposons également le matériel marketing de la marque.</p>
+      <p class="text-sm text-mango" data-i18n="products.estar.merch_label">Casquettes, t-shirts, tasses, stylos, rubans, clés USB, mini-réfrigérateurs, étagères et tapis.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-mango/15">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 py-16 text-center reveal">
+      <h2 class="font-display text-3xl font-bold text-navy mb-3" data-i18n="products.cta.title">Un produit qui vous intéresse ?</h2>
+      <p class="text-navy/70 mb-8" data-i18n="products.cta.text">Contactez-nous pour connaître nos disponibilités et nos conditions.</p>
+      <a href="contact.html" class="inline-flex items-center rounded-full bg-brandred text-white font-semibold px-7 py-3 hover:bg-navy transition-colors" data-i18n="products.cta.button">Demander plus d'informations</a>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-navy text-white/80">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-3 gap-10">
+    <div>
+      <img src="assets/images/original/logo1.jpg" alt="Fote Import & Export" class="h-9 w-auto rounded mb-4 bg-white p-1">
+      <p class="text-sm" data-i18n="footer.tagline">Import & Export entre l'Afrique et le monde depuis 2004.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4" data-i18n="footer.nav_title">Navigation</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="hover:text-white" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="business.html" class="hover:text-white" data-i18n="nav.business">Entreprise</a></li>
+        <li><a href="brand.html" class="hover:text-white" data-i18n="nav.brand">Marque Fote</a></li>
+        <li><a href="products.html" class="hover:text-white" data-i18n="nav.products">Produits</a></li>
+        <li><a href="contact.html" class="hover:text-white" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-display font-semibold mb-4" data-i18n="footer.contact_title">Contact</h4>
+      <ul class="space-y-2 text-sm">
+        <li>fotesarl@fotesarl.com</li>
+        <li>+351 963 311 615</li>
+        <li>+224 666 55 54 33</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-5 text-xs text-white/60">
+      <p>&copy; <span id="current-year">2026</span> Fote Import & Export S.a.r.l. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
